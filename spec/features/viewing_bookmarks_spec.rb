@@ -11,7 +11,7 @@ feature 'Viewing bookmarks' do
 
     expect(page).to have_content "http://www.makersacademy.com"
     expect(page).to have_content "http://www.google.com"
-    expect(page).to have_content "http://www.bbc.com"
+    expect(page).to have_content "http://www.destroyallsoftware.com"
 
   end
 end
