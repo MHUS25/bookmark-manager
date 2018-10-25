@@ -1,4 +1,5 @@
 require_relative './database_connection'
+
 class Tag
 
   attr_reader :id, :content
