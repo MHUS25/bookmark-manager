@@ -1,5 +1,6 @@
 require 'tag'
 require 'bookmark'
+require 'bookmark_tag'
 require 'database_helpers'
 
  describe Tag do

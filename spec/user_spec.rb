@@ -1,6 +1,7 @@
 require 'user'
 require 'database_helpers'
- describe User do
+
+describe User do
   describe '.create' do
     it 'creates a new user' do
       user = User.create(email: 'test@example.com', password: 'password123')
