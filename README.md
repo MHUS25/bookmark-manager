@@ -23,7 +23,11 @@ I want to update a bookmark
 
 As a user
 So that the bookmarks I save are useful
-I want to be able to save only valid URLs
+I want to save only valid URLs
+
+As a user
+So that I can make notes about my bookmarks
+I want to add a Comment to a Bookmark
 ```
 
 ## How to use
