@@ -32,6 +32,10 @@ I want to add a Comment to a Bookmark
 As a user
 So that I can categorise my bookmarks
 I want to add a Tag to a Bookmark
+
+As a user
+So that I can find relevant bookmarks
+I want to filter Bookmarks by a Tag
 ```
 
 ## How to use
