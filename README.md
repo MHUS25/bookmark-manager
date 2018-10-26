@@ -1,7 +1,7 @@
 # Bookmark Manager
 
 Bookmark manager is a web application to maintain a collection of bookmarks (URLs). 
-(A RESTful CRUD web app built using Ruby, Sinatra, RSpec, Capybara, Postgres HTML & CSS.)
+A RESTful CRUD web app built using Ruby, Sinatra, RSpec, Capybara, Postgres HTML & CSS.
 
 ## Motivations for this project
 
@@ -79,16 +79,16 @@ I want to sign out
 ## Approach
 
 * 6 Classes: Bookmark, DatabaseConnection, Comment, Tag, BookmarkTag, & User
-* 7 Views: /*bookmarks*, /*bookmarks*/new, /*bookmarks*/edit, /*comments*/new, /*sessions*/new, /*tags*, /*tags*/new, /*users*/new
+* 7 Views: /**bookmarks**, /**bookmarks**/new, /**bookmarks**/edit, /**comments**/new, /**sessions**/new, /**tags**, /**tags**/new, /**users**/new
 * Fully test drove app using RSpec & Capybara
-* Aimed to use the MVC pattern to improve the maintainability of the app
+* Used the MVC pattern to improve the maintainability of the app
 
 
 ## Getting started
 
 ### To set up the project
 
-1. clone repo to your local machine `git clone https://github.com/MHUS25/bookmark-manager.gitt`
+1. clone repo to your local machine `git clone https://github.com/MHUS25/bookmark-manager.git`
 2. Run the command `gem install bundle` (if you don't have bundle already)
 3. When the installation completes, `run bundle`
 
@@ -116,5 +116,5 @@ Run both feature and unit tests using:
 ## Next steps & ideas for extending the application:
 
 * Improve the UI & UX by linking pages/routes
-* Link bookmarks to a user so that a user has to be logged in to add/view bookmarks & can only read/update/delete bookmarks they have added
+* Link bookmarks to users so that a user has to be logged in to add/view bookmarks & can only read/update/delete bookmarks they have added
 * Automate migrations - Write a Rake task to set up the development and test databases
