@@ -83,6 +83,9 @@ I want to sign out
 * Fully test drove app using RSpec & Capybara
 * Used the MVC pattern to improve the maintainability of the app
 
+### MVC Diagram
+
+![Screenshot 1](./public/images/Screen-Shot-1.png)
 
 ## Getting started
 
