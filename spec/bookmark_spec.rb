@@ -3,6 +3,7 @@ require 'database_helpers'
 require 'tag'
 require 'bookmark_tag'
 
+
 describe Bookmark do
   let(:comment_class) { double(:comment_class) }
   let(:tag_class) { double(:tag_class) }
@@ -44,6 +45,15 @@ describe Bookmark do
   describe '.delete' do
     it 'deletes a given bookmark' do
       bookmark = Bookmark.create(title: 'Makers Academy', url: 'http://www.makersacademy.com')
+      Bookmark.delete(id: bookmark.id)
+      expect(Bookmark.all.length).to eq 0
+    end
+
+    it 'deletes a given bookmark which has a comment and a tag' do
+      bookmark = Bookmark.create(title: 'Makers Academy', url: 'http://www.makersacademy.com')
+      tag = Tag.create(content: 'test tag')
+      BookmarkTag.create(bookmark_id: bookmark.id, tag_id: tag.id)
+      comment = Comment.create(text: 'This is a test comment', bookmark_id: bookmark.id)
       Bookmark.delete(id: bookmark.id)
       expect(Bookmark.all.length).to eq 0
     end
