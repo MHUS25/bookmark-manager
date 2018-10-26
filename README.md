@@ -79,7 +79,7 @@ I want to sign out
 ## Approach
 
 * 6 Classes: Bookmark, DatabaseConnection, Comment, Tag, BookmarkTag, & User
-* 7 Views: /**bookmarks**, /**bookmarks**/new, /**bookmarks**/edit, /**comments**/new, /**sessions**/new, /**tags**, /**tags**/new, /**users**/new
+* 8 Views: /**bookmarks**, /**bookmarks**/new, /**bookmarks**/edit, /**comments**/new, /**sessions**/new, /**tags**, /**tags**/new, /**users**/new
 * Fully test drove app using RSpec & Capybara
 * Used the MVC pattern to improve the maintainability of the app
 
