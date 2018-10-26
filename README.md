@@ -1,6 +1,19 @@
 # Bookmark Manager
 
-Bookmark manager is a website to maintain a collection of bookmarks (URLs). You can use it to save a webpage you found useful. You can add tags to the webpages you saved to find them later. You can browse bookmarks other users have added. You can comment on the bookmarks.
+Bookmark manager is a web application to maintain a collection of bookmarks (URLs). 
+(A RESTful CRUD web app built using Ruby, Sinatra, RSpec, Capybara, Postgres HTML & CSS.)
+
+## Motivations for this project
+
+* Build a web app that uses a database
+* Generate User Stories from Requirements
+* Build complete full-stack features - including controller, model, view and database code.
+* Implement RESTful routing conventions
+* Build a Registration system & Authentication system
+* Implement a one-to-many & one-to-many relationships
+* Use database GUIs to interact with databases
+* Set up a test environment
+* Test-Drive advanced Objects in Ruby, including adapter, wrapper, and service objects
 
 ## User Stories
 
@@ -50,15 +63,34 @@ So that I can keep my account secure
 I want to sign out
 ```
 
-## How to use
+## Features
+
+* A user can view, add, edit & delete bookmarks
+* A user can add comments to bookmarks
+* A user can add tags to bookmarks
+* A user can view all comments and tags under each bookmark
+* A user can view all bookmarks under a tag
+* A user can sign up
+* A user can sign in
+* A user sees an error if they get their email wrong
+* A user sees an error if they get their password wrong
+* A user can sign out
+
+## Approach
+
+* 6 Classes: Bookmark, DatabaseConnection, Comment, Tag, BookmarkTag, & User
+* 7 Views: /*bookmarks*, /*bookmarks*/new, /*bookmarks*/edit, /*comments*/new, /*sessions*/new, /*tags*, /*tags*/new, /*users*/new
+* Fully test drove app using RSpec & Capybara
+* Aimed to use the MVC pattern to improve the maintainability of the app
+
+
+## Getting started
 
 ### To set up the project
 
-Clone this repository and then run:
-
-```
-bundle
-```
+1. clone repo to your local machine `git clone https://github.com/MHUS25/bookmark-manager.gitt`
+2. Run the command `gem install bundle` (if you don't have bundle already)
+3. When the installation completes, `run bundle`
 
 ### To set up the database
 
@@ -71,16 +103,18 @@ CREATE DATABASE bookmark_manager_test;
 
 To set up the appropriate tables, connect to each database in `psql` and run the SQL scripts in the `db/migrations` folder in the given order.
 
-### To run the Bookmark Manager app:
+## Usage
 
-```
-ruby app.rb
-```
+To start the server, execute the ruby file directly `ruby app.rb`.
+Visit http://localhost:4567/ in your browser.
 
-To view bookmarks, navigate to `localhost:4567/bookmarks`.
+## Running tests
 
-### To run tests:
+Run both feature and unit tests using:
+`rspec`
 
-```
-rspec
-```
+## Next steps & ideas for extending the application:
+
+* Improve the UI & UX by linking pages/routes
+* Link bookmarks to a user so that a user has to be logged in to add/view bookmarks & can only read/update/delete bookmarks they have added
+* Automate migrations - Write a Rake task to set up the development and test databases
