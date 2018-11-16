@@ -85,7 +85,7 @@ I want to sign out
 
 ### MVC Diagram
 
-![Screenshot 1](./public/images/Screen-Shot-2.png)
+![Screenshot 1](./public/images/Screen-Shot-1.png)
 
 ## Getting started
 
